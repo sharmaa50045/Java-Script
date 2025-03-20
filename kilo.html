@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="">
+<input type="text" id="kilo">
+<input type="button" value="convert" id="button">
+</form>
+<script>
+    document.getElementById("button").onclick = function(){
+        let poundtokilo = document.getElementById("kilo").value;
+        let pound = 2.2046;
+        let result = poundtokilo * pound;
+        alert(`${poundtokilo} kilo * ${pound} poundtokilo = ${result} kilo`);
+    }
+</script>
+
+</body>
+</html>

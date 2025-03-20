@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="">
+<input type="text" id="miles">
+<input type="button" value="convert" id="button">
+</form>
+<script>
+    document.getElementById("button").onclick = function(){
+        let milestokm = document.getElementById("miles").value;
+        let km = 1.60934;
+        let result = milestokm * km;
+        alert(`${milestokm} miles * ${km} km = ${result} miles`);
+    }
+
+</script>
+
+</body>
+</html>
